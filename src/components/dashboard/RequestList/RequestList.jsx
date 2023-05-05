@@ -17,7 +17,7 @@ const RequestList = () => {
 
   const updateRequestStatus = async ({ _id, approved }) => {
     try {
-      const res = await axios.post(`http://localhost:2000/approve`, {
+      const res = await axios.post(`https://cybercalendarpro.onrender.com/approve`, {
         _id,
         approved,
       });

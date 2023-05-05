@@ -49,7 +49,7 @@ function Main() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await axios.post("http://localhost:2000/classesdata");
+        const res = await axios.post("https://cybercalendarpro.onrender.com/classesdata");
 
         const { data } = res.data;
         if (!data) return;

@@ -21,7 +21,7 @@ export const useUserHandle = () => {
 
   const login = async ({ email, password }) => {
     try {
-      const res = await axios.post("http://localhost:2000/login", {
+      const res = await axios.post("https://cybercalendarpro.onrender.com/login", {
         email,
         password,
       });
@@ -35,7 +35,7 @@ export const useUserHandle = () => {
 
   const signup = async ({ email, password, userName, phone }) => {
     try {
-      const res = await axios.post("http://localhost:2000/signup", {
+      const res = await axios.post("https://cybercalendarpro.onrender.com/signup", {
         userName: userName,
         Password: password,
         Email: email,
@@ -57,7 +57,7 @@ export const useUserHandle = () => {
     try {
       const storedData = JSON.parse(localStorage.getItem("user"));
       if (!Object.keys(storedData).length) return;
-      const res = await axios.post("http://localhost:2000/auth", {
+      const res = await axios.post("https://cybercalendarpro.onrender.com/auth", {
         id: storedData.userId,
       });
       setUser(res.data);

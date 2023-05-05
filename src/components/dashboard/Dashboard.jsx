@@ -49,9 +49,9 @@ const Dashboard = () => {
     const getData = async () => {
       try {
         const classesData = await axios.post(
-          "http://localhost:2000/classesdata"
+          "https://cybercalendarpro.onrender.com/classesdata"
         );
-        const requestList = await axios.get("http://localhost:2000/unresolved");
+        const requestList = await axios.get("https://cybercalendarpro.onrender.com/unresolved");
 
         if (!classesData || !requestList) return;
 

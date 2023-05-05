@@ -17,7 +17,7 @@ function SingleClass() {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .post("http://localhost:2000/getdatedata", {
+      .post("https://cybercalendarpro.onrender.com/getdatedata", {
         className: name,
         date: todayFormat,
       })

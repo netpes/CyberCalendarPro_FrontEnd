@@ -61,7 +61,7 @@ const CalenderPage = () => {
       return setTimeout(() => setIsError(false), 2000);
     }
     try {
-      const res = await axios.post("http://localhost:2000/addMeeting", {
+      const res = await axios.post("https://cybercalendarpro.onrender.com/addMeeting", {
         date: selectedDate,
         className: selectedClass,
         time_range: selectedTime,

@@ -23,7 +23,7 @@ const Dashboard = () => {
     if (!capacity) setCapacityIsError(true);
     if (!capacity || !className) return;
     try {
-      const res = await axios.post("http://localhost:2000/addclass", {
+      const res = await axios.post("https://cybercalendarpro.onrender.com/addclass", {
         className,
         capacity,
         checklist,

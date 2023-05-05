@@ -50,7 +50,7 @@ export default function MyModal(prop) {
   const handleClose = () => prop.setState(false);
 
   async function UpdateSpecs() {
-    await axios.post("http://localhost:2000/changespecs", {
+    await axios.post("https://cybercalendarpro.onrender.com/changespecs", {
       id: user.userId,
       userName: userName,
       Password: password,
